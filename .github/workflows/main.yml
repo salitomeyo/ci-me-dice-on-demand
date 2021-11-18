@@ -55,7 +55,7 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: voxmedia/github-action-slack-notify-build@v1
         with:
-          channel: app-alerts
+          channel: ci-me-dice-on-demand-salitomeyo
           status: SUCCESS
           color: good
 
@@ -65,6 +65,6 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: voxmedia/github-action-slack-notify-build@v1
         with:
-          channel: app-alerts
+          channel: ci-me-dice-on-demand-salitomeyo
           status: FAILED
           color: danger
